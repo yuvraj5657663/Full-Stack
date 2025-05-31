@@ -1,0 +1,29 @@
+:root {
+    --background-color: #181a1b;
+    --text-color: #e8e6e3;
+    --primary-color: #1f2223;
+    --accent-color: #4f8cff;
+    --border-color: #2c2f31;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--accent-color);
+}
+
+button,
+input,
+select,
+textarea {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+hr {
+    border-color: var(--border-color);
+}

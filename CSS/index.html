@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Import Concepts Example</title>
+    <!-- Importing external CSS files -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components/button.css">
+    <link rel="stylesheet" href="themes/dark-theme.css" media="(prefers-color-scheme: dark)">
+    <!-- Importing fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Inline CSS with @import for demonstration -->
+    <style>
+        /* Importing another CSS file inside a style block */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+        /* CSS Variables */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --font-main: 'Roboto', sans-serif;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #212529;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                font-size: 16px;
+            }
+            .container {
+                padding: 10px;
+            }
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .mt-4 { margin-top: 2rem; }
+        .mb-4 { margin-bottom: 2rem; }
+
+        /* Component Example */
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 400px;
+        }
+
+        /* Animation Example */
+        .fade-in {
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">CSS Import Concepts in Real Projects</h1>
+        <div class="card fade-in">
+            <h2>Features Demonstrated:</h2>
+            <ul>
+                <li>External CSS imports (<code>&lt;link&gt;</code>, <code>@import</code>)</li>
+                <li>CSS Variables</li>
+                <li>Responsive Design (<code>@media</code> queries)</li>
+                <li>Utility Classes</li>
+                <li>Component-based CSS</li>
+                <li>Theme support (dark mode)</li>
+                <li>Font imports</li>
+                <li>Animations</li>
+            </ul>
+            <button class="btn btn-primary mt-4">Primary Button</button>
+        </div>
+    </div>
+</body>
+</html>
