@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f3f6;
+  color: #333;
+  line-height: 1.6;
+  transition: all 0.3s ease-in-out;
+  /* padding: 0 20px; */
+}
+
+.hero {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid #312f2f;
+
+  /* position: sticky; */
+  top: 0;
+  z-index: 1000;
+}
+.hero h1 {
+  font-size: 1.8rem;
+  color: #2881ee;
+}
+.about {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid #312f2f;
+
+  position: sticky;
+}
+.about h2 {
+  font-size: 1.8rem;
+  color: #2881ee;
+}
+
+.project {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid #312f2f;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.project h2 {
+  font-size: 1.8rem;
+  color: #2881ee;
+}
+.project-card p {
+  font-style: italic;
+  color: #a01503;
+  font-size: 1.2rem;
+}
+.project-card h3 {
+  color: red;
+  font-size: 1.3rem;
+}
+
+#skills {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid #312f2f;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#skills h2 {
+  font-size: 1.8rem;
+  color: #2881ee;
+}
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Style for the list */
+.tech-list {
+  list-style: bullet;
+  padding: 10;
+}
+
+.tech-list li {
+  font-size: 24px;
+  margin-bottom: 15px; /* 👉 gap between items */
+  color: #d81313;
+}
+
+/* Optional: remove gap after last item */
+.tech-list li:last-child {
+  margin-bottom: 0;
+}
+
+#contact {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 1px solid #312f2f;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+#contact h2 {
+  font-size: 1.8rem;
+  color: #2881ee;
+}
+footer {
+  text-align: center;
+  border-bottom: #312f2f;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}

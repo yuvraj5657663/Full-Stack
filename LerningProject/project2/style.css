@@ -1,0 +1,32 @@
+/* Full height for centering */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the box vertically and horizontally */
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Style for the list */
+.tech-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-list li {
+  font-size: 24px;
+  margin-bottom: 15px; /* 👉 gap between items */
+  color: #333;
+}
+
+/* Optional: remove gap after last item */
+.tech-list li:last-child {
+  margin-bottom: 0;
+}
